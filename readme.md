@@ -1,15 +1,21 @@
 
-英灵神殿服务器自动搭建 - 阿里云资源编排
-Valheim game server auto deploy - Aliyun ROS
+## 英灵神殿服务器自动搭建 - 阿里云资源编排
+**Valheim game server auto deploy - Aliyun ROS**
 
 1. 在相同地域创建好 NAS文件存储NFS卷，专有网络，虚拟交换机，安全组。并且找到它们各自的ID，NFS需要知道它的路径。
 1. Create NFS volumes x2, VPC, VSwitch and SecurityGroup in the same zone. Copy their ID. For NFS volumes, copy its url path.
 
+
+
 2. 访问所在地域的资源编排ROS，进入`资源栈` `创建资源栈`
 2. visit `https://rosnext.console.aliyun.com`, go `Resources Stack` -> `Create Resources Stack`
 
+
+
 3. 用步骤1的对应id替换下面代码中`{YourValue}`,复制粘贴到网页中
 3. Copy the following json and replace all `{YourValue}` using id from step 1
+
+
 
 4. 大功告成。下次启动只需要执行步骤三了。
 4. Done. For next start, all you need to do is step 3.
